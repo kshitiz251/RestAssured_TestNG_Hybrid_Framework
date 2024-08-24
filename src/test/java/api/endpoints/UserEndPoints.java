@@ -34,7 +34,7 @@ public class UserEndPoints {
 
 		Response response = given().pathParam("username", userName)
 
-				.when().get(getUrl().getString("get_url"));
+				.when().get(Utilities.getPropertisData("get_url"));
 			//	.when().get(Routes.get_url);
 
 		return response;
